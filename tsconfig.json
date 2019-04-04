@@ -9,7 +9,8 @@
     "strict": true,
     "target": "es2015",
     "composite": false,
-    "incremental": false
+    "incremental": false,
+    "declaration": true
   },
   "compileOnSave": true,
   "include": ["src"]
