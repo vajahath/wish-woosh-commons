@@ -7,7 +7,9 @@
     "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "es2015"
+    "target": "es2015",
+    "composite": false,
+    "incremental": false
   },
   "compileOnSave": true,
   "include": ["src"]
