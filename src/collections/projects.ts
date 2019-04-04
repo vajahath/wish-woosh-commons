@@ -1,6 +1,3 @@
-import * as firebase from "firebase/app";
-import "firebase/firestore";
-
 import { IRenderFile } from "./_Render-file";
 
 export interface IProjects {
@@ -15,11 +12,11 @@ export interface IProjects {
   name: string;
 
   /**
-   * reference of the theme from `themes` collection.
+   * reference id of the theme from `themes` collection.
    *
-   * type: `firebase.firestore.DocumentReference`
+   * type: `string`
    */
-  theme: firebase.firestore.DocumentReference;
+  themeId: string;
 
   /**
    * name of the theme stored in `themes` collection.

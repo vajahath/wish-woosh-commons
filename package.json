@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/vajahath/wish-woosh-commons#readme",
   "dependencies": {
-    "firebase": "^5.9.2",
     "typescript": "^3.4.1"
   }
 }
