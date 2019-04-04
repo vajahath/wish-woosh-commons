@@ -33,16 +33,19 @@ export interface ITheme {
   /**
    * static files of the theme stored in the storage bucket. these files
    * don't need processing. they are just copied to the live project bucket
-   * when user creates this project.
+   * when user creates this project. These are stored in the builder module.
+   * No need to store in db.
+   *
    */
-  srcStaticFiles: string[];
+  srcStaticFiles?: string[];
 
   /**
    * files that requires rendering. these files are passed into ejs rendering engine
    * with the data to render. In `projects' collection, `destDynamicRenderFiles` are
-   * created with this data.
+   * created with this data. These are stored in the builder module.
+   * No need to store in db.
    */
-  srcDynamicFiles: string[];
+  srcDynamicFiles?: string[];
 
   /**
    * path of the document snapshot when fetched with firebase sdk
