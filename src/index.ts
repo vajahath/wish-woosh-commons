@@ -1,1 +1,3 @@
-export const ooo = "ooo";
+import * as collections from "./collections";
+
+export { collections };
