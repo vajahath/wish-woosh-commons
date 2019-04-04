@@ -33,6 +33,11 @@ export interface IProjects {
   srcRootPath: string;
 
   /**
+   * relative path of static files wrt `srcRootPath`.
+   */
+  srcStaticFiles: string[];
+
+  /**
    * files that need to be rendered with user's data. type: `IRenderFile[]`
    */
   destDynamicRenderFiles: IRenderFile[];
@@ -52,6 +57,11 @@ export interface IProjects {
    *
    */
   status: "created" | "abandoned" | "completed" | "published";
+
+  /**
+   * final live project url. when clicked here, goes to the live page
+   */
+  liveUrl: string;
 
   /**
    * path of the document snapshot when fetched with firebase sdk
