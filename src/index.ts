@@ -1,3 +1,3 @@
 import * as collections from "./collections";
 
-export { collections };
+export { collections as Collections };
