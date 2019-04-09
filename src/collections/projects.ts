@@ -56,6 +56,11 @@ export interface IProjects {
   status: "created" | "abandoned" | "completed" | "published";
 
   /**
+   * Project created at date
+   */
+  createdAt: Date;
+
+  /**
    * final live project url. when clicked here, goes to the live page
    */
   liveUrl: string;

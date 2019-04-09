@@ -20,12 +20,6 @@ export interface ITheme {
   labels: string[];
 
   /**
-   * angular builder module path. this module will be lazy loaded when
-   * user start creating this theme
-   */
-  builder: string;
-
-  /**
    * theme src root path where theme assets are stored. (Storage bucket path)
    */
   srcRoot: string;
