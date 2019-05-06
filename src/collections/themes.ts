@@ -5,6 +5,16 @@ export interface ITheme {
   displayImage: string;
 
   /**
+   * theme gallery image.
+   */
+  gallery: string[];
+
+  /**
+   * preview URL.
+   */
+  previewUrl: string;
+
+  /**
    * name of the theme
    */
   name: string;
