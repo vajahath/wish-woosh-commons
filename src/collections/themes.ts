@@ -7,7 +7,20 @@ export interface ITheme {
   /**
    * theme gallery image.
    */
-  gallery: string[];
+  gallery: Array<{
+    /**
+     * original src
+     */
+    src: string;
+    /**
+     * width
+     */
+    w: number;
+    /**
+     * height
+     */
+    h: number;
+  }>;
 
   /**
    * preview URL.
