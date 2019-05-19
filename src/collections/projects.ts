@@ -63,7 +63,7 @@ export interface IProjects {
   /**
    * Is ads removed in this project? 
    */
-  adsRemoved?:boolean;
+  adsEnabled?:boolean;
 
   /**
    * Project created at date
