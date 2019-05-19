@@ -7,7 +7,7 @@ export interface ITheme {
   /**
    * theme gallery image.
    */
-  gallery: Array<{
+  gallery?: Array<{
     /**
      * original src
      */
@@ -21,6 +21,11 @@ export interface ITheme {
      */
     h: number;
   }>;
+
+  /**
+   * Amount to pay the user to remove ads
+   */
+  removeAdsPrice?: number;
 
   /**
    * preview URL.
