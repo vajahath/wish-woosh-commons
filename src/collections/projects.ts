@@ -56,6 +56,16 @@ export interface IProjects {
   status: "created" | "abandoned" | "completed" | "published";
 
   /**
+   * Amount user has to pay to remove ads
+   */
+  removeAdsPrice?:number
+
+  /**
+   * Is ads removed in this project? 
+   */
+  adsRemoved?:boolean;
+
+  /**
    * Project created at date
    */
   createdAt: Date;
